@@ -78,16 +78,19 @@ main {
     width: 100%;
     display: block;
 }
-.botaoSeta.esquerda {
-    left: 7rem;
-}
-.botaoSeta.direita {
+#botaoDireito {
     right: 7rem;
 }
-.botaoSeta.esquerda img {
+#botaoEsquerdo {
+    left: 7rem;
     transform: rotate(180deg);
 }
 .botaoSeta:hover {
     transform: scale(1.02);
     transition: 0.3s ease-in-out;
+}
+
+/* Botão inativo */
+.botaoSeta.botaoInativo {
+    opacity: 0.5;
 }
