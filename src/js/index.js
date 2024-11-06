@@ -37,7 +37,7 @@ function trocarSlide (botaoClicado) {
 
 function botaoInativo (posicaoAtual) {
     if (posicaoAtual == 0) listaBotoes[0].classList.add('botaoInativo')
-    if (posicaoAtual == 3) listaBotoes[1].classList.add('botaoInativo')
+    if (posicaoAtual == (cards.length - 1)) listaBotoes[1].classList.add('botaoInativo')
     if ((posicaoAtual > 0) && (posicaoAtual < (cards.length - 1))) {
         for (let indice = 0; indice < listaBotoes.length; indice++) {
             if (listaBotoes[indice].classList.contains('botaoInativo')) listaBotoes[indice].classList.remove('botaoInativo')
