@@ -106,6 +106,14 @@ function botaoInativo (posicaoAtual) {
 
 Eu deixei o cards.length - 1 na condicional porque embora possa ser complicação da minha parte, eu achei que fosse melhor assim pois 'em uma situação hipotética onde esse slider fosse receber mais slides no futuro eu não precisaria me preocupar em mexer nessa função manualmente', assim ele busca o tamanho do índice sozinho.
 
+---
+
+### Atualização - 06/11/2024
+
+Não mexi em nada do código, mas assistindo o vídeo da resolução do exercício e olhando meu código, eu percebi uma redundância nos botões '< >', eu criei uma outra variável contendo uma lista de botões mas na verdade eu não precisava fazer isso pois eu já possuia esses elementos armazenados nas variáveis botão direito e botão esquerdo.
+
+Também tive mais ideias de como deixar esse algoritmo mais simples, em breve eu vou passar aqui e tentar deixar esse código mais otimizado.
+
 ### Desenvolvimento contínuo 🚀
 
 Bom, já finalizei o módulo intermediário de JS e falta mais um exercício (e uma quest) para passar para o avançado, estou muito animado para "debulhar" essa linguagem e me virar um bom desenvolvedor (e consequentemente arranjar um emprego 😅)
