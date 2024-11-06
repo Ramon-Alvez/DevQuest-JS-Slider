@@ -1,0 +1,41 @@
+@media screen and (max-width: 970px) {
+    main {
+        justify-content: center;
+    }
+    .conteudo {
+        margin-left: 0;
+        margin: 0 6rem;
+    }
+    .botaoSeta {
+        width: calc(4.9rem / 2);
+        height: calc(7.8rem / 2);
+    }
+    #botaoDireito {
+        right: 2rem;
+    }
+    #botaoEsquerdo {
+        left: 2rem;
+    }
+    .conteudo h1 {
+        font-size: calc(var(--Titulo)/2);
+        margin-bottom: 4rem;
+    }
+    .conteudo p {
+        font-size: calc(var(--Paragrafo)/2);
+        line-height: 2.5rem;
+        height: 12.5rem;
+        overflow-y: hidden;
+    }
+    .conteudo .botao {
+        font-size: calc(var(--Botao-SaibaMais) / 2);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .conteudo {
+        padding: 3rem;
+    }
+    .conteudo h1 {
+        margin-bottom: 2rem;
+    }
+}

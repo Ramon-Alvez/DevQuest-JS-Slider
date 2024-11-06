@@ -12,13 +12,20 @@ main {
     align-items: center;
 }
 
-.card.cardAtivo {
+
+.card {
     display: flex;
     align-items: center;
     height: 100vh;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease-out;
+    position: absolute;
+    top: 0;
+    z-index: -1;
 }
-.card {
-    display: none;
+.card.cardAtivo {
+    opacity: 1;
 }
 .card .imagemFundo {
     position: absolute;
@@ -33,8 +40,8 @@ main {
 }
 
 .conteudo {
-    width: 62rem;
-    height: 70rem;
+    max-width: 62rem;
+    max-height: 70rem;
     margin-left: 18rem;  
     background-color: #fff;
     
@@ -43,26 +50,42 @@ main {
     display: flex;
     flex-direction: column;
 }
-/* Card paragraph */
+/* Card paragrafo */
 .conteudo h1 {
-    font-size: 5rem;
+    font-size: var(--Titulo);
     font-weight: 400;
     margin-bottom: 8rem;
 }
 .conteudo p {
-    font-size: 2.5rem;
+    font-size: var(--Paragrafo);
     font-weight: 300;
     line-height: 3.5rem;
 }
-
 .conteudo .botao {
-    font-size: 3rem;
+    font-size: var(--Botao-SaibaMais);
     font-weight: 700;
-    color: #C50000;
+    color: var(--botaoCard1);
 
     align-self: flex-start;
     margin-top: auto;
 }
+/* BOTÃO CARD 1 */
+#card1 .conteudo .botao {
+    color: var(--botaoCard1);
+}
+/* BOTÃO CARD 1 */
+#card2 .conteudo .botao {
+    color: var(--botaoCard2);
+}
+/* BOTÃO CARD 1 */
+#card3 .conteudo .botao {
+    color: var(--botaoCard3);
+}
+/* BOTÃO CARD 1 */
+#card4 .conteudo .botao {
+    color: var(--botaoCard4);
+}
+
 
 /* Botão Seta */
 .botaoSeta {
@@ -72,6 +95,7 @@ main {
     height: 7.8rem;
     position: absolute;
 
+    top: 50%;
     cursor: pointer;
 }
 .botaoSeta img {
